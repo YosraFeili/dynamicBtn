@@ -1,6 +1,6 @@
 <template>
   <div class="">
-    <BaseBtn :title="title"/>
+    <BaseBtn title="send" type="circle" @click.native="test"/>
   </div>
 </template>
 
@@ -12,7 +12,12 @@ export default {
   components: { BaseBtn },
   data () {
     return {
-      title: 'send'
+      color: 'green'
+    }
+  },
+  methods: {
+    test () {
+      console.log('123')
     }
   }
 }
