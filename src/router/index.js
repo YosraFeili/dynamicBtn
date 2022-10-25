@@ -1,7 +1,7 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import HomeView from '../views/HomeView.vue'
-import UiPosition from '@/views/UiPosition'
+import UiPosition from '@/views/Design/position/UiPosition'
 
 Vue.use(VueRouter)
 
@@ -12,7 +12,7 @@ const routes = [
     component: HomeView
   },
   {
-    path: '/uiposision',
+    path: '/position-task',
     name: 'position',
     component: UiPosition
   },
