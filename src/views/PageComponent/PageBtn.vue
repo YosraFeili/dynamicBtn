@@ -1,5 +1,5 @@
 <template>
-  <div class="">
+  <div class="container">
     <BaseBtn title="send" type="circle" @click.native="test"/>
   </div>
 </template>
@@ -24,5 +24,11 @@ export default {
 </script>
 
 <style scoped>
-
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  position: relative;
+}
 </style>
