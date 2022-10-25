@@ -3,6 +3,7 @@ import VueRouter from 'vue-router'
 import HomeView from '../views/HomeView.vue'
 import UiPosition from '@/views/Design/position/UiPosition'
 import PageBtn from '@/views/PageComponent/PageBtn'
+import CountDown from '@/views/Timer/CountDown'
 
 Vue.use(VueRouter)
 
@@ -21,6 +22,11 @@ const routes = [
     path: '/page-btn',
     name: 'page-btn',
     component: PageBtn
+  },
+  {
+    path: '/count-down',
+    name: 'count-down',
+    component: CountDown
   },
   {
     path: '/about',

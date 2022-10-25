@@ -5,7 +5,10 @@
         <router-link :to="{name:'position'}">task position</router-link>
       </li>
       <li>
-        <router-link :to="{name:'page-btn'}"> btn component</router-link>
+        <router-link :to="{name:'page-btn'}">btn component</router-link>
+      </li>
+      <li>
+        <router-link :to="{name:'count-down'}">count down</router-link>
       </li>
     </ul>
   </div>
