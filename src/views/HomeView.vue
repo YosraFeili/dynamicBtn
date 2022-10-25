@@ -1,7 +1,13 @@
 <template>
   <div class="home">
-    <router-link :to="{name:'position'}">task position</router-link>
-    <router-link :to="{name:'page-btn'}"> btn component</router-link>
+    <ul>
+      <li>
+        <router-link :to="{name:'position'}">task position</router-link>
+      </li>
+      <li>
+        <router-link :to="{name:'page-btn'}"> btn component</router-link>
+      </li>
+    </ul>
   </div>
 </template>
 
@@ -16,7 +22,28 @@ export default {
   display: flex;
   justify-content: space-between;
 }
-a{
-  color: #2c3e50;
+ul{
+  display: flex;
+  justify-content: start;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #1b4965;
+  border-radius: 10px;
+}
+li a{
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+li :hover{
+  background-color: #cae9ff;
+  color: #1b4965;
+}
+li :active{
+  background-color: #cae9ff;
 }
 </style>
