@@ -2,6 +2,7 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 import HomeView from '../views/HomeView.vue'
 import UiPosition from '@/views/Design/position/UiPosition'
+import PageBtn from '@/views/PageComponent/PageBtn'
 
 Vue.use(VueRouter)
 
@@ -15,6 +16,11 @@ const routes = [
     path: '/position-task',
     name: 'position',
     component: UiPosition
+  },
+  {
+    path: '/page-btn',
+    name: 'page-btn',
+    component: PageBtn
   },
   {
     path: '/about',

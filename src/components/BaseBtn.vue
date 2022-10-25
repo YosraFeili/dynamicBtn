@@ -1,12 +1,15 @@
 <template>
-<div class="">
-  <button type="">send</button>
-</div>
+  <div class="">
+    <button>{{title}}</button>
+  </div>
 </template>
 
 <script>
 export default {
   name: 'BaseBtn',
+  props: {
+    title: String
+  }
 }
 </script>
 
