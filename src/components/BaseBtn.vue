@@ -2,7 +2,8 @@
   <div class="">
     <button :class="{
       pill : type === 'pill',
-      circle : type === 'circle'
+      circle : type === 'circle',
+      square : type === 'square'
     }">
       {{ title }}
     </button>
@@ -42,5 +43,11 @@ export default {
   color: #2c3e50;
   border: none;
   cursor: pointer;
+}
+.square{
+  width: 80px;
+  background-color: #42b983;
+  color: white;
+  border: 2px solid #42b983;
 }
 </style>
