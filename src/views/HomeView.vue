@@ -10,6 +10,9 @@
       <li>
         <router-link :to="{name:'count-down'}">count down</router-link>
       </li>
+      <li>
+        <router-link :to="{name:'vuex-state'}">vuex state</router-link>
+      </li>
     </ul>
   </div>
 </template>

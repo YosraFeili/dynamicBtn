@@ -4,6 +4,7 @@ import HomeView from '../views/HomeView.vue'
 import UiPosition from '@/views/Design/position/UiPosition'
 import PageBtn from '@/views/PageComponent/PageBtn'
 import CountDown from '@/views/Timer/CountDown'
+import VuexState from '@/views/Vuex/VuexState'
 
 Vue.use(VueRouter)
 
@@ -27,6 +28,11 @@ const routes = [
     path: '/count-down',
     name: 'count-down',
     component: CountDown
+  },
+  {
+    path: '/vuex-state',
+    name: 'vuex-state',
+    component: VuexState
   },
   {
     path: '/about',
