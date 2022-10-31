@@ -5,6 +5,8 @@ import UiPosition from '@/views/Design/position/UiPosition'
 import PageBtn from '@/views/PageComponent/PageBtn'
 import CountDown from '@/views/Timer/CountDown'
 import VuexState from '@/views/Vuex/VuexState'
+import TodoList from '@/views/TodoList/TodoList'
+import VuexGetters from '@/views/Vuex/VuexGetters'
 
 Vue.use(VueRouter)
 
@@ -33,6 +35,16 @@ const routes = [
     path: '/vuex-state',
     name: 'vuex-state',
     component: VuexState
+  },
+  {
+    path: '/vuex-getters',
+    name: 'vuex-getters',
+    component: VuexGetters
+  },
+  {
+    path: '/todo-list',
+    name: 'todo-list',
+    component: TodoList
   },
   {
     path: '/about',
