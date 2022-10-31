@@ -19,6 +19,9 @@
       <li>
         <router-link :to="{name:'vuex-getters'}">vuex getters</router-link>
       </li>
+      <li>
+        <router-link :to="{name:'vuex-mutations'}">vuex mutations</router-link>
+      </li>
     </ul>
   </div>
 </template>

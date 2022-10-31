@@ -22,7 +22,8 @@ export default new Vuex.Store({
         name: 'todo 3',
         done: false
       }
-    ]
+    ],
+    count: 0
   },
   getters: {
     doneTodos (state) {
@@ -30,6 +31,9 @@ export default new Vuex.Store({
     }
   },
   mutations: {
+    increment (state, payload) {
+      state.count += payload.number
+    }
   },
   actions: {
   },

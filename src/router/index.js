@@ -7,6 +7,7 @@ import CountDown from '@/views/Timer/CountDown'
 import VuexState from '@/views/Vuex/VuexState'
 import TodoList from '@/views/TodoList/TodoList'
 import VuexGetters from '@/views/Vuex/VuexGetters'
+import VuexMutations from '@/views/Vuex/VuexMutations'
 
 Vue.use(VueRouter)
 
@@ -40,6 +41,11 @@ const routes = [
     path: '/vuex-getters',
     name: 'vuex-getters',
     component: VuexGetters
+  },
+  {
+    path: '/vuex-mutations',
+    name: 'vuex-mutations',
+    component: VuexMutations
   },
   {
     path: '/todo-list',
