@@ -22,6 +22,9 @@
       <li>
         <router-link :to="{name:'vuex-mutations'}">vuex mutations</router-link>
       </li>
+      <li>
+        <router-link :to="{name:'vuex-actions'}">vuex actions</router-link>
+      </li>
     </ul>
   </div>
 </template>

@@ -23,7 +23,8 @@ export default new Vuex.Store({
         done: false
       }
     ],
-    count: 0
+    count: 0,
+    number: 30
   },
   getters: {
     doneTodos (state) {
@@ -33,9 +34,16 @@ export default new Vuex.Store({
   mutations: {
     increment (state, payload) {
       state.count += payload.number
+    },
+
+    decrease (state, payload) {
+      state.number -= payload
     }
   },
   actions: {
+    decrease ({ commit }, payload) {
+      commit('decrease', payload.number)
+    }
   },
   modules: {
   }

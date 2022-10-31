@@ -8,6 +8,7 @@ import VuexState from '@/views/Vuex/VuexState'
 import TodoList from '@/views/TodoList/TodoList'
 import VuexGetters from '@/views/Vuex/VuexGetters'
 import VuexMutations from '@/views/Vuex/VuexMutations'
+import VuexActions from '@/views/Vuex/VuexActions'
 
 Vue.use(VueRouter)
 
@@ -46,6 +47,11 @@ const routes = [
     path: '/vuex-mutations',
     name: 'vuex-mutations',
     component: VuexMutations
+  },
+  {
+    path: '/vuex-actions',
+    name: 'vuex-actions',
+    component: VuexActions
   },
   {
     path: '/todo-list',
