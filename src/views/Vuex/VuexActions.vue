@@ -1,8 +1,10 @@
 <template>
 <div class="">
   <div class="">actions</div>
-  <div class="">{{number}}</div>
-  <base-btn title="decrease" type="pill" @click.native="decrease()"/>
+  <div class="count">
+    <div class="counter">{{number}}</div>
+    <base-btn title="decrease" type="pill" @click.native="decrease()"/>
+  </div>
 </div>
 </template>
 
@@ -19,7 +21,7 @@ export default {
   methods: {
     decrease () {
       this.$store.dispatch('decrease', {
-        number: 3
+        number: 10
       })
     }
   }
@@ -27,5 +29,10 @@ export default {
 </script>
 
 <style scoped>
-
+.count{
+  margin-top: 20px
+}
+.counter{
+  margin-bottom: 20px;
+}
 </style>
