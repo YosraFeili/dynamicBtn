@@ -20,13 +20,11 @@
     <div class="">get done todo</div>
     <hr>
     <div class="card-title">
-      <span>Id</span>
       <span>Name</span>
       <span>Done</span>
     </div>
     <hr>
     <div class="card-item" v-for="todo in doneTodos" :key="todo.id">
-      <span>{{todo.id}}</span>
       <span>{{todo.name}}</span>
       <span>{{todo.done}}</span>
     </div>
