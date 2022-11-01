@@ -1,5 +1,6 @@
 import Vue from 'vue'
 import Vuex from 'vuex'
+import axios from 'axios'
 
 Vue.use(Vuex)
 
@@ -24,13 +25,16 @@ export default new Vuex.Store({
       }
     ],
     count: 0,
-    number: 30
+    number: 30,
+    tasks: []
   },
+
   getters: {
     doneTodos (state) {
       return state.todos.filter(todo => todo.done)
     }
   },
+
   mutations: {
     increment (state, payload) {
       state.count += payload.number
@@ -38,13 +42,25 @@ export default new Vuex.Store({
 
     decrease (state, payload) {
       state.number -= payload
+    },
+
+    setTasks (state, tasks) {
+      state.tasks = tasks
     }
   },
+
   actions: {
     decrease ({ commit }, payload) {
       commit('decrease', payload.number)
+    },
+
+    getTasks ({ commit }) {
+      axios.get('https://dummyjson.com/todos').then((res) => {
+        commit('setTasks', res.data.todos)
+      }).catch((err) => {
+        console.log(err)
+      })
     }
   },
-  modules: {
-  }
+  modules: {}
 })
