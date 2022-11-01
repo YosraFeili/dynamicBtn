@@ -3,6 +3,9 @@
     <div class="">
       <TodoHeader/>
     </div>
+    <div class="">
+      <FilterBox/>
+    </div>
     <div class="card" v-for="todo in tasks" :key="todo.id">
       <div class="card-body">{{ todo.todo }}</div>
       <div class="card-icon">
@@ -19,10 +22,11 @@
 
 <script>
 import TodoHeader from '@/components/TodoHeader'
+import FilterBox from '@/components/FilterBox'
 
 export default {
   name: 'HomeStore',
-  components: { TodoHeader },
+  components: { FilterBox, TodoHeader },
   computed: {
     tasks () {
       return this.$store.state.tasks
@@ -45,10 +49,12 @@ export default {
 .card {
   margin: 10px;
   width: 30%;
+  height: 30px;
   display: flex;
   padding: 10px;
   justify-content: space-evenly;
   border: 1px solid gray;
+  border-radius: 5px;
 }
 
 .card-body {

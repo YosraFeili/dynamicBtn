@@ -60,6 +60,14 @@ export default new Vuex.Store({
       }).catch((err) => {
         console.log(err)
       })
+    },
+
+    filterTasks ({ commit }, limit) {
+      axios.get(`https://dummyjson.com/todos?limit=${limit}`).then((res) => {
+        commit('setTasks', res.data.todos)
+      }).catch((err) => {
+        console.log(err)
+      })
     }
   },
   modules: {}
