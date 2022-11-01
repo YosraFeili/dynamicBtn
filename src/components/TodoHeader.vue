@@ -2,6 +2,9 @@
 <div class="">
   <ul>
     <li>
+      <router-link :to="{name:'home'}">Home</router-link>
+    </li>
+    <li>
       <router-link :to="{name:'todo'}">Task Home</router-link>
     </li>
   </ul>
